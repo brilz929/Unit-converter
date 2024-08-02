@@ -45,18 +45,3 @@ resetBtn.addEventListener("click", function() {
 })
 
 
-//
-
-//inputBtn.addEventListener("click", function() {
-   // let numbers = inputEl.value
-    //if (numbers <= 1) {
-        //length.textContent = `${numbers} meter = ${numbers * meterToFeet.toFixed(3)} foot | ${numbers} foot = ${numbers * feetToMeter.toFixed(3)} meter`
-       // volume.textContent = `${numbers} liter = ${numbers * literToGallon.toFixed(3)} gallon | ${numbers} gallon = ${numbers * gallonToLiter.toFixed(3)} liter`
-       // mass.textContent = `${numbers} kilogram = ${numbers * kiloToPound.toFixed(3)} pound | ${numbers} pound = ${numbers * poundtoKilo.toFixed(3)} kilogram`
-     
-    //} else {
-        //length.textContent = `${numbers} meters = ${numbers * meterToFeet.toFixed(3)} feet | ${numbers} feet = ${numbers * feetToMeter.toFixed(3)} meters`
-      //  volume.textContent = `${numbers} liters = ${numbers * literToGallon.toFixed(3)} gallons | ${numbers} gallons = ${numbers * gallonToLiter.toFixed(3)} liters`
-      //  mass.textContent = `${numbers} kilograms = ${numbers * kiloToPound.toFixed(3)} pounds | ${numbers} pounds = ${numbers * poundtoKilo.toFixed(3)} kilograms`
-    //}
-//})
