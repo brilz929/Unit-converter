@@ -15,7 +15,7 @@ const conversionRates = {
     poundToKilo: 0.454
 };
 
-inputBtn.addEventListener("click", function() {
+inputBtn.addEventListener("click", function () {
     const inputNumber = inputEl.value
     if (isNaN(inputNumber)) {
         alert("Please enter a valid number")
@@ -25,19 +25,19 @@ inputBtn.addEventListener("click", function() {
         volumeEl.textContent = `${inputNumber} liter = ${(inputNumber * 0.264).toFixed(3)} gallon | ${inputNumber} gallon = ${(inputNumber * 3.785).toFixed(3)} liters`
         massEl.textContent = `${inputNumber} kilogram = ${(inputNumber * 2.204).toFixed(3)} pounds | ${inputNumber} pound = ${(inputNumber * 0.454).toFixed(3)} kilograms`
     } else {
-    updateConversion(inputNumber, lengthEl, 'meters', 'feet', conversionRates.meterToFeet, conversionRates.feetToMeter)
-    updateConversion(inputNumber, volumeEl, 'liters', 'gallons', conversionRates.literToGallon, conversionRates.gallonToLiter)
-    updateConversion(inputNumber, massEl, 'kilograms', 'pounds', conversionRates.kiloToPound, conversionRates.poundToKilo)
+        updateConversion(inputNumber, lengthEl, 'meters', 'feet', conversionRates.meterToFeet, conversionRates.feetToMeter)
+        updateConversion(inputNumber, volumeEl, 'liters', 'gallons', conversionRates.literToGallon, conversionRates.gallonToLiter)
+        updateConversion(inputNumber, massEl, 'kilograms', 'pounds', conversionRates.kiloToPound, conversionRates.poundToKilo)
     }
 })
 
 function updateConversion(input, element, unit1, unit2, rate1, rate2) {
-    const unit1Text = unit1 
+    const unit1Text = unit1
     const unit2Text = unit2
     element.textContent = `${input} ${unit1Text} = ${(input * rate1).toFixed(3)} ${unit2Text} | ${input} ${unit2Text} = ${(input * rate2).toFixed(3)} ${unit1Text}`
 }
 
-resetBtn.addEventListener("click", function() {
+resetBtn.addEventListener("click", function () {
     lengthEl.textContent = ""
     volumeEl.textContent = ""
     massEl.textContent = ""
