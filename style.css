@@ -40,7 +40,6 @@ body {
     border-radius: 5px;
     margin-bottom: 1em;
     text-align: center;
-   
 }
 
 .btn, .reset {
@@ -57,6 +56,7 @@ body {
     opacity: .75; 
     cursor: pointer;
 }
+
 .btn-container {
     display: flex;
     gap: 1em;
